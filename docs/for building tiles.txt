@@ -1,0 +1,8 @@
+for building tiles:
+export to png and make sure each tile is 16X16 without spaces between the tiles.
+add to png to unity
+make pixels per unit 16, fiter mode to point and compression to none
+apply and open in sprite editor
+in there make sure the slice is 16x16 and slice
+create a tile palette(can do in Window->2D->Tile palette) and add the png to it
+then you can select each tile to paint, remember to use the grid and tilemaps in a correct order(ground->walkway->rails->...)
