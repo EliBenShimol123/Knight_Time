@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\bench\\Desktop\\knight time\\knight_time\\Assets\\_GAME_\\scripts\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\bench\\Desktop\\knight time\\knight_time\\Assets\\_GAME_\\scripts\\fighting\\characters\\enemies\\Enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:fighting\\characters\\enemies\\Enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\bench\\Desktop\\knight time\\knight_time\\Assets\\_GAME_\\scripts\\fighting\\characters\\Character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:fighting\\characters\\Character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\bench\\Desktop\\knight time\\knight_time\\Assets\\_GAME_\\scripts\\fighting\\FightingManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:fighting\\FightingManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Enemy.cs",
+              "DocumentMoniker": "C:\\Users\\bench\\Desktop\\knight time\\knight_time\\Assets\\_GAME_\\scripts\\fighting\\characters\\enemies\\Enemy.cs",
+              "RelativeDocumentMoniker": "fighting\\characters\\enemies\\Enemy.cs",
+              "ToolTip": "C:\\Users\\bench\\Desktop\\knight time\\knight_time\\Assets\\_GAME_\\scripts\\fighting\\characters\\enemies\\Enemy.cs",
+              "RelativeToolTip": "fighting\\characters\\enemies\\Enemy.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T02:50:19.551Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Character.cs",
+              "DocumentMoniker": "C:\\Users\\bench\\Desktop\\knight time\\knight_time\\Assets\\_GAME_\\scripts\\fighting\\characters\\Character.cs",
+              "RelativeDocumentMoniker": "fighting\\characters\\Character.cs",
+              "ToolTip": "C:\\Users\\bench\\Desktop\\knight time\\knight_time\\Assets\\_GAME_\\scripts\\fighting\\characters\\Character.cs",
+              "RelativeToolTip": "fighting\\characters\\Character.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T02:50:14.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FightingManager.cs",
+              "DocumentMoniker": "C:\\Users\\bench\\Desktop\\knight time\\knight_time\\Assets\\_GAME_\\scripts\\fighting\\FightingManager.cs",
+              "RelativeDocumentMoniker": "fighting\\FightingManager.cs",
+              "ToolTip": "C:\\Users\\bench\\Desktop\\knight time\\knight_time\\Assets\\_GAME_\\scripts\\fighting\\FightingManager.cs",
+              "RelativeToolTip": "fighting\\FightingManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T02:50:05.919Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -22,14 +22,7 @@ public class Movment : MonoBehaviour
     void Update()
     {
         move.x = Input.GetAxis("Horizontal");
-        //if (move.x == 0)
-        //{
-            move.y = Input.GetAxis("Vertical");
-       // }
-       // else
-       // {
-       //     move.y = 0;
-       // }
+        move.y = Input.GetAxis("Vertical");
 
     }
 
