@@ -44,37 +44,33 @@ public class EnemiesManager : MonoBehaviour
             }
             count = count + 1;
         }
-        /*
-        Enemy enemyPrefab = enemyPrefabs.Find(prefab => prefab.enemyType == EnemyOptions.DUMMY);
-        Enemy enemyTile = Instantiate(enemyPrefab, new Vector3(3, 7), Quaternion.identity);
-        enemyTile.GetComponent<Enemy>().Initialize(1, new Vector3(3, 7));//remember to use when wanting to get Enemy component
-        enemyTile.gameObject.SetActive(true);
-        enemies.Add(enemyTile);
-
-        Enemy enemyTile2 = Instantiate(enemyPrefab, new Vector3(4, 7), Quaternion.identity);
-        enemyTile2.GetComponent<Enemy>().Initialize(2, new Vector3(4, 7));//remember to use when wanting to get Enemy component
-        enemyTile2.gameObject.SetActive(true);
-        enemies.Add(enemyTile2);
-        */
     }
 
     public void enemyTurns()
     {
+        TextManager.instance.hideMoves();
+        Debug.Log("enemies turn");
+        string damageString = "the Enemies turn:" + '\n' +
+                      "(press the space bar to continue)";
+        TextManager.instance.changeText(damageString, 20);
         if (enemies.Count > 0)
         {
-            Debug.Log("enmies turn");
-            string damageString = "the Enemies turn:" + '\n' +
-                          "(press the space bar to continue)";
-            TextManager.instance.changeText(damageString, 20);
             foreach (Enemy enemy in enemies)
             {
                 enemy.turn();
             }
+
             FightingManager.instance.spacePressed.Add(() =>
             {
-                TextManager.instance.changeText("", 24);
                 FightingManager.instance.switchMethod(Method.EndFight);
-
+            });
+        }
+        else
+        {
+            FightingManager.instance.spacePressed.Add(() =>
+            {
+                TextManager.instance.changeText("No enemies remaining.", 24);
+                FightingManager.instance.switchMethod(Method.EndFight);
             });
         }
 

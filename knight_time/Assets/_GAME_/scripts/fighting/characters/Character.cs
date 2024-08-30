@@ -44,7 +44,7 @@ public abstract class Character : MonoBehaviour
         return exp;
     }
 
-    public void setHealth(int damage)
+    public virtual void setHealth(int damage)
     {
         Debug.Log(charName + " taken damage " + damage);
 
@@ -61,13 +61,16 @@ public abstract class Character : MonoBehaviour
         {
             this.currHealth = 0;
         }
-
-        FightingManager.instance.spacePressed.Add(() =>
+        else
         {
-            string healthString = "'" + charName + "'" + " has " + currHealth + " health points left." + '\n' +
-                              "(press the space bar to continue)";
-            TextManager.instance.changeText(healthString, 20);
-        });
+            FightingManager.instance.spacePressed.Add(() =>
+            {
+                string healthString = "'" + charName + "'" + " has " + currHealth + " health points left." + '\n' +
+                                  "(press the space bar to continue)";
+                TextManager.instance.changeText(healthString, 20);
+                endHurtAnimation();
+            });
+        }
 
         if (this.currHealth == 0)
             Destroy(gameObject);
@@ -75,6 +78,8 @@ public abstract class Character : MonoBehaviour
 
     public abstract void turn();
     public abstract void deathNote();
+
+    public abstract void endHurtAnimation();
 
 
     public string getDesc()

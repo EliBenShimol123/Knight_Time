@@ -1,0 +1,10 @@
+HERO: What is this? weird building
+HERO: But this is where the man said merling would be
+HERO: Maybe he is inside, better check it out
+NARRATOR: Will !name! find Merlin?
+HERO: Who's talking?
+NARRATOR: Will he understand where he is?
+HERO: What's going on?
+NARRATOR: Will he ever be quiet and let the narrator finish this demo?
+HERO: ...
+NARRATOR: All of this and more next time, on KnightTime

@@ -98,6 +98,7 @@ public class TextManager : MonoBehaviour
         healBtn.gameObject.SetActive(true);
         defendBtn.gameObject.SetActive(true);
         positionBtn.gameObject.SetActive(true);
+        escBtn.gameObject.SetActive(false);
     }
     public void clearChoices()
     {

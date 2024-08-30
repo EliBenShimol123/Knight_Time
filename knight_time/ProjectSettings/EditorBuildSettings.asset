@@ -6,6 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/_GAME_/Scenes/Opening_Screen.unity
+    guid: b6b2f7cc2c5f9b44ea2ce1907e036cf4
+  - enabled: 1
     path: Assets/_GAME_/Scenes/Starting_Scene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/_GAME_/Scenes/Fighting_Scene.unity
+    guid: db39bea51a6ed704d9665fb2d1daa1ff
+  - enabled: 1
+    path: Assets/_GAME_/Scenes/Town_Scene.unity
+    guid: f72481869e1f5d146aac141a0d1d0a2a
+  - enabled: 1
+    path: Assets/_GAME_/Scenes/End_Scene.unity
+    guid: 6a24ab6f27cf0dd49b92d7323693ae54
+  - enabled: 1
+    path: Assets/_GAME_/Scenes/DeathScene.unity
+    guid: 01937637de8308349b38fcd70c8fb612
   m_configObjects: {}

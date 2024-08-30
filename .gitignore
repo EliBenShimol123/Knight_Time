@@ -10,3 +10,5 @@
 # Unity metadata files
 [Aa]ssets/AssetStoreTools*
 [Aa]ssets/Plugins/*/
+
+.vs/

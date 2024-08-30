@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TrainingDummy : Enemy
 {
+
+    public Animator transition;
 
     public override void turn()
     {
@@ -51,5 +54,23 @@ public class TrainingDummy : Enemy
             new KnifeStab()
         };
         addMoves(moves);
+    }
+
+
+    public override void setHealth(int damage)
+    {
+
+        base.setHealth(damage);
+
+        transition.ResetTrigger("Idol");
+        transition.SetTrigger("Attack");
+
+        Debug.Log(charName + " " + "attacked");
+    }
+
+    public override void endHurtAnimation()
+    {
+        transition.ResetTrigger("Attack");
+        transition.SetTrigger("Idol");
     }
 }

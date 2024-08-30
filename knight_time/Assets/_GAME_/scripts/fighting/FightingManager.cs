@@ -11,7 +11,6 @@ public class FightingManager : MonoBehaviour
     public int offset;
     public Method currMethod;
     public LookDirection currLookDirection;
-    public List<EnemyOptions> fightEnemies;
     [SerializeField] public HeroFighting hero;
     public List<Action> spacePressed = new List<Action>();
 
@@ -20,7 +19,6 @@ public class FightingManager : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            fightEnemies = new List<EnemyOptions>();
             offset = 2;
         }
         Debug.Log("fight");
@@ -28,12 +26,12 @@ public class FightingManager : MonoBehaviour
 
     void Start()
     {
+        
         currLookDirection = LookDirection.RIGHT;
-        fightEnemies.Add(EnemyOptions.DUMMY);
-        fightEnemies.Add(EnemyOptions.DUMMY);
         width = 16;
         height = 9;
         switchMethod(Method.BuildMap);
+
     }
 
     public void switchMethod(Method method)
@@ -47,7 +45,7 @@ public class FightingManager : MonoBehaviour
                 break;
             case Method.SpawnEnemies:
                 //SpawnEnemies();
-                EnemiesManager.instance.spawnEnemies(fightEnemies);
+                EnemiesManager.instance.spawnEnemies(LevelLoader.instance.fightEnemies);
                 switchMethod(Method.SpawnPlayer);
                 break;
             case Method.SpawnPlayer:
@@ -86,10 +84,12 @@ public class FightingManager : MonoBehaviour
                                           "(press the space bar to continue)";
                         TextManager.instance.changeText(endString, 20);
                         //TODO switch back to the main map screen
+                        LevelLoader.instance.returnFromFighting(hero.getHealth(), hero.getExp() + EnemiesManager.instance.totalExp);
                     });
                 }
                 break;
             case Method.Death:
+                LevelLoader.instance.deathScene();
                 break;
             default:
                 Debug.LogWarning("Unhandled method: " + method);
@@ -109,7 +109,7 @@ public class FightingManager : MonoBehaviour
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
 
-        if (currMethod == Method.Attack && hero.selectedMove != null)
+        if (currMethod == Method.Attack && hero.choosingPlace)
         {
             if (horizontal > 0)
             {

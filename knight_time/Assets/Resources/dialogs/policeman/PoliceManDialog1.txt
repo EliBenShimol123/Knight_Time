@@ -1,0 +1,20 @@
+POLICEMAN: Stop right there citizen
+HERO: Who do you think you are talking to? 
+POLICEMAN: To some cosplayer, apparently
+HERO: I'M NOT A COSPLAYER, I'M A KNIGHT
+POLICEMAN: Yes and I keep the law, we all tell ourselfs lies
+HERO: Whatever, listen I need to pass to go find Merlin
+POLICEMAN: Can't let anyone in, orders from above
+HERO: Why?
+POLICEMAN: Don't know, they wouldn't say
+HERO: Listen is there a way you can let me in?
+POLICEMAN: Well ... there is some way ...
+HERO: What do I need to do?
+POLICEMAN: If you can find me a good beer glass I'll let you go
+HERO: What kind of beer glass?
+POLICEMAN: Well you see I'm a beer enthusiast so I'll need a special glass, one that I've never seen before
+HERO: A special beer glass you say, fine I'm up for a challenge
+HERO: I, !name!, will find the holy grail of beer glasses for you dear sir, even if my life depended on it
+POLICEMAN: No need for the theatrics, but that's the spirit
+HERO: Ok, now where the hell can I find that glass?
+HERO: Should probably go talk to the lady by the lake, she may know

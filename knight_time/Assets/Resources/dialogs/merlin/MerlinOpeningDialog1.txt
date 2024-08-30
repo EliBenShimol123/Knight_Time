@@ -1,0 +1,8 @@
+MERLIN: Hello there travaler
+MERLIN: I must warn you of grave danger
+HERO: Huh? merlin I have a name you know
+MERLIN: Of course I know
+HERO: yeah, so what is it then?
+MERLIN: Well your name is ...
+MERLIN: ... What is your name again?
+HERO: Again? fine my name is ...

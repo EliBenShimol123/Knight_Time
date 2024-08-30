@@ -1,0 +1,19 @@
+HERO: Hey there Lady Lake
+LADYLAKE: Lady Lake?
+HERO: Well you are a lady, by a lake
+LADYLAKE: That is so wrong I won't even try to explain
+LADYLAKE: Anyway what do you want?
+HERO: I need to find a special beer glass, any chance you can help?
+LADYLAKE: Well you know what they say, one man's trash is another's treasure
+HERO: Who the hell said that? 
+LADYLAKE: I don't know actually, but I do know they were right
+LADYLAKE: You won't believe the stuff people throw away
+HERO: Sounds cool and all but how does this help me?
+LADYLAKE: Can't you read what I'm saying?
+HERO: Actually I can't read, studied the sword instead
+LADYLAKE: ...
+HERO: ...
+LADYLAKE: Right ... Just look in trash cans, you could find something useful
+HERO: Ok, thank you m'lady
+HERO: Off I go now, must continue the quest for the holy grail
+LADYLAKE: What a strange guy, it's like he is from a fairy tale or something

@@ -12,6 +12,8 @@ public class HeroFighting : Character
     private bool endTurn = false;
     private bool secondTurn = false;
 
+    public bool choosingPlace = false;
+
     public void signalSpwanPlayer()
     {
         TextManager.instance.changeText("your turn, choose a tile to spawn", 24);
@@ -22,7 +24,7 @@ public class HeroFighting : Character
     public void spawnPlayer(Vector3 place)
     {
         this.gameObject.SetActive(true);
-        createCharacter("hero", 10, 0, place);
+        createCharacter(LevelLoader.instance.heroName, LevelLoader.instance.heroHealth, 0, place);
         //hero_tile.transform.position =  place;
         //add here to load moves from the game manager that will keep all the available moves
         List<Move> moves = new List<Move>
@@ -83,8 +85,8 @@ public class HeroFighting : Character
     public void doMove()
     {
         Debug.Log("do move");
-        MapManager.instance.highlightAttackSpots();
-
+        //MapManager.instance.highlightAttackSpots();
+        choosingPlace = true;
         TextManager.instance.changeText("Use arrow keys to select the attack location you want(that is also available)" + '\n' +
             "When you are ready to attack press 'attack', to return press 'abort'", 20);
 
@@ -95,12 +97,14 @@ public class HeroFighting : Character
     {
         Debug.Log("attack enemies");
         TextManager.instance.hideMakeSure();
+        //MapManager.instance.stopHighlightSpots();
+        choosingPlace = false;
+        MapManager.instance.stopHighlightSpots();
         EnemiesManager.instance.takeDamage(place, selectedMove);
         if (selectedMove.type != Type.LIGHT || secondTurn)
             endTurn = true;
         else
             secondTurn = true;
-        MapManager.instance.stopHighlightSpots();
     }
 
 
@@ -133,7 +137,7 @@ public class HeroFighting : Character
         Debug.Log(secondTurn + " " + endTurn);
         MapManager.instance.stopHighlightSpots();
         TextManager.instance.clearText();
-        if (endTurn)
+        if (endTurn || EnemiesManager.instance.enemies.Count == 0)
         {
             FightingManager.instance.switchMethod(Method.EnemiesTurn);
         }
@@ -203,6 +207,11 @@ public class HeroFighting : Character
         endTurn = true;
         EndTurn();
 
+    }
+
+    public override void endHurtAnimation()
+    {
+        //TODO
     }
 }
 
