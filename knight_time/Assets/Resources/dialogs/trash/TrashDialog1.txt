@@ -1,0 +1,4 @@
+TRASH: Ok pull on 3
+HERO: Got it
+TRASH: 1..2..
+HERO: HERE I GO!

@@ -1,0 +1,4 @@
+POLICEMAN: Didn't you say you were going
+HERO: Yeah about that ... where did you say I could find Merlin?
+POLICEMAN: At the left side of town
+HERO: Gotcha, I'll go now

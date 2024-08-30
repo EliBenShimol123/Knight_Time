@@ -1,0 +1,15 @@
+POLICEMAN: Well, did you find a special beer glass
+HERO: Sure did, take a look at this
+POLICEMAN: WOW, now that is something special
+POLICEMAN: How did you find it?
+HERO: You know what they say, trash is treasure
+HERO: Or something like that
+POLICEMAN: No one says that, but anyway can you give me the glass?
+HERO: Remove this blockade and you will recieve your grail
+POLICEMAN: You got it man
+POLICEMAN: But I do need to ask, what are you loooking for?
+HERO: I'm trying to find Merlin
+POLICEMAN: Oh you looking for Merl's Inn, just go to the left side of the town
+HERO: Really? thanks
+POLICEMAN: Good luck on your way, I'll now go to use this glass
+HERO: Have fun, my journey continuos, to Merlin I go
